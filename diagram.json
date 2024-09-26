@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "GABRIELE GUERRIERI",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-nano", "id": "nano", "top": 8.3, "left": -8.3, "attrs": {} },
+    { "type": "wokwi-ir-receiver", "id": "ir1", "top": -29.55, "left": 201.48, "attrs": {} },
+    { "type": "wokwi-logic-analyzer", "id": "logic1", "top": -15.62, "left": 302.53, "attrs": {} }
+  ],
+  "connections": [
+    [ "ir1:DAT", "nano:2", "green", [ "v28.75", "h-57.31", "v-110.77", "h-68.73" ] ],
+    [ "nano:GND.1", "ir1:GND", "black", [ "v38.43", "h8.42" ] ],
+    [ "nano:5V", "ir1:VCC", "red", [ "v52.64", "h106.22" ] ],
+    [ "ir1:DAT", "logic1:D0", "green", [ "v25.71", "h38.87", "v-3.28" ] ]
+  ]
+}
